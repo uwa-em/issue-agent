@@ -1,0 +1,1 @@
+is_palindrome returns False for 'Racecar' and for phrases with spaces or punctuation. It should ignore case, spaces and punctuation.

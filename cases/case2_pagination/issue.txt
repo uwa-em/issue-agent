@@ -1,0 +1,1 @@
+Page 1 of the results skips the first items. Pages are 1-indexed: page 1 should return the first `size` items.

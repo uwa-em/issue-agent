@@ -1,0 +1,1 @@
+Login fails for users who type their email with capital letters. normalize_email should return a lowercase, trimmed email.

@@ -1,0 +1,1 @@
+The dashboard crashes with ZeroDivisionError when a user has no scores. average of an empty list should return 0.

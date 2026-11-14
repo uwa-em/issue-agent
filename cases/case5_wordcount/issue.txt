@@ -1,0 +1,1 @@
+word_count is wrong when the text has extra spaces or is empty. It should count words, not spaces.
