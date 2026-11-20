@@ -1,4 +1,4 @@
-import subprocess
+import subprocess, sys
 from pathlib import Path
 
 REPO = (Path(__file__).resolve().parent.parent / "sandbox_repo")
@@ -32,9 +32,10 @@ def edit_file(path: str, old: str, new: str) -> str:
     return "ok"
 
 def run_tests() -> str:
-    r = subprocess.run(["python", "-m", "pytest", "-x", "-q"],
+    r = subprocess.run([sys.executable, "-m", "pytest", "-q"],
                        cwd=REPO, capture_output=True, text=True, timeout=60)
-    return (r.stdout + r.stderr)[-2000:]
+    status = "ALL TESTS PASSED" if r.returncode == 0 else "TESTS FAILED"
+    return f"{status}\n{(r.stdout + r.stderr)[-1500:]}"
 
 REGISTRY = {f.__name__: f for f in
             [list_files, read_file, search_code, edit_file, run_tests]}

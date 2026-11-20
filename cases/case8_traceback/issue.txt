@@ -1,0 +1,5 @@
+The weekly report crashes when the scores file ends with a blank line:
+  File report.py, line 4, in top_scorer
+    scores = load_scores(raw)
+ValueError: not enough values to unpack (expected 2, got 1)
+Fix it so trailing blank lines are fine.

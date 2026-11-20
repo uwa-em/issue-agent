@@ -1,0 +1,1 @@
+Cart totals are off by a few cents for orders with several items. Totals should be exact to 2 decimals.

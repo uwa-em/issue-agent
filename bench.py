@@ -11,7 +11,10 @@ def tests_pass(repo):
     return r.returncode == 0
 
 results = []
+only = sys.argv[1] if len(sys.argv) > 1 else None
 for case in sorted((ROOT / "cases").iterdir()):
+    if only and only not in case.name:
+        continue
     issue = (case / "issue.txt").read_text().strip()
     work = Path(tempfile.mkdtemp()) / "repo"
     shutil.copytree(case / "repo", work)

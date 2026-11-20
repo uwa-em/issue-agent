@@ -2,36 +2,57 @@
   {
     "case": "case1_email",
     "passed": true,
-    "steps": 15,
-    "stopped": "max_steps",
-    "seconds": 33.8
+    "steps": 5,
+    "stopped": "tests_pass",
+    "seconds": 12.6
   },
   {
     "case": "case2_pagination",
     "passed": true,
-    "steps": 15,
-    "stopped": "max_steps",
-    "seconds": 52.9
+    "steps": 5,
+    "stopped": "tests_pass",
+    "seconds": 17.3
   },
   {
     "case": "case3_average",
     "passed": true,
-    "steps": 15,
-    "stopped": "max_steps",
-    "seconds": 40.4
+    "steps": 5,
+    "stopped": "tests_pass",
+    "seconds": 19.0
   },
   {
     "case": "case4_palindrome",
     "passed": true,
-    "steps": 15,
-    "stopped": "max_steps",
-    "seconds": 43.3
+    "steps": 6,
+    "stopped": "tests_pass",
+    "seconds": 19.2
   },
   {
     "case": "case5_wordcount",
     "passed": true,
-    "steps": 15,
-    "stopped": "max_steps",
-    "seconds": 48.2
+    "steps": 5,
+    "stopped": "tests_pass",
+    "seconds": 21.8
+  },
+  {
+    "case": "case6_two_files",
+    "passed": true,
+    "steps": 7,
+    "stopped": "tests_pass",
+    "seconds": 34.0
+  },
+  {
+    "case": "case7_vague",
+    "passed": true,
+    "steps": 5,
+    "stopped": "tests_pass",
+    "seconds": 13.6
+  },
+  {
+    "case": "case8_traceback",
+    "passed": true,
+    "steps": 7,
+    "stopped": "tests_pass",
+    "seconds": 18.4
   }
 ]

@@ -1,0 +1,1 @@
+Users with a plus sign in their email, like bob+news@gmail.com, can't sign up. The form says the email is invalid.
